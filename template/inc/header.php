@@ -20,5 +20,5 @@
             </li>
         </ul>
         </nav>
-        <h3 class="text-muted">Job Board</h3>
+        <h3 class="text-muted"><?php echo SITE_TITLE;?></h3>
       </div>
