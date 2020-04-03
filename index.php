@@ -3,6 +3,6 @@
 <?php 
 $job = new Job;
 $template = new Template('template/frontpage.php'); 
-$template->jobs = $job->getAllJobs();
+// $template->jobs = $job->getAllJobs();
 echo $template;
 ?>

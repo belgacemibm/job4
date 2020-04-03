@@ -11,8 +11,7 @@ class Database{
 
     public function __contruct(){
         //Set DSN
-        $dsn = "mysql:host=".$this->host.";dbname=".$this->dbname;
-
+        $dsn = "mysql:host". $this->host.";dbname=". $this->dbname;
         //Set Options
         $options = array(
             PDO::ATTR_PERSISTENT => true,
@@ -20,9 +19,11 @@ class Database{
         );
         // PDO Intance
         try{
-            $this->dbh = new PDO($dsn,$this->user, $this->pass,$options);
+            $this->dbh = new PDO($dsn, $this->user, $this->pass, $options);
+
         } catch(PDOEception $e){
             $this->error = $e->getMessage();
+            $this->$e;
         }
     }
     public function query($query){
