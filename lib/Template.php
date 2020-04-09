@@ -12,7 +12,7 @@
     return $this->vars[$key];
 }
 public function __set($key,$value){
-    $this->var[$key] = $value;
+    $this->vars[$key] = $value;
 }
  public function __toString(){
     extract($this->vars);
