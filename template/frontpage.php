@@ -21,7 +21,7 @@
           <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
         </div>
         <div class='col-md-2'>
-            <button type="button" class="btn btn-dark">View</button>
+            <a  class="btn btn-dark" href='job.php?id=<?php echo $job->id;?>'>View</a>
       </div>
     </div>
     <?php endforeach;?>
