@@ -48,34 +48,40 @@ class Job
 
     }
 
-        // Get Category
+    // Get Category
 
-        public function getCategory($category_id)
-        {
-            $this->db->query("SELECT *
+    public function getCategory($category_id)
+    {
+        $this->db->query("SELECT *
                    FROM categories
                    WHERE id = $category_id
                    ");
-            // $this->db->bind(':category_id',$category_id);
-            //Assign Row 
-            $row = $this->db->single();
-            return $row;
-    
-        }
-      // Get Job
+        // $this->db->bind(':category_id',$category_id);
+        //Assign Row
+        $row = $this->db->single();
+        return $row;
 
-      public function getJob($id)
-      {
-          $this->db->query("SELECT *
+    }
+    // Get Job
+
+    public function getJob($id)
+    {
+        $this->db->query("SELECT *
                  FROM jobs
                  WHERE id = $id
                  ");
         //   $this->db->bind(':id',$id);
-          //Assign Row 
-          $row = $this->db->single();
-          return $row;
-  
-      }
-        
+        //Assign Row
+        $row = $this->db->single();
+        return $row;
 
+    }
+    //Create Job
+
+    public function create($data)
+    {
+        $this->db->query("INSERT TO jobs( job_title, company, category_id, salary, contact_user, contact_email, 'description', 'location')
+        VALUES(:job_title, :company, :category_id, :salary, :contact_user, :contact_email, :'description', :'location')");
+        
+    }
 }
