@@ -18,7 +18,7 @@
     <div class="row marketing">
         <div class="col-md-10">
           <h4><?php echo $job->job_title; ?> </h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <p> <?php echo $job->job_description; ?> </p>
         </div>
         <div class='col-md-2'>
             <a  class="btn btn-dark" href='job.php?id=<?php echo $job->id;?>'>View</a>

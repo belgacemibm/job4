@@ -1,5 +1,5 @@
 <footer class="footer">
-        <p>&copy; 2020 Bex Cooportation, Inc.</p>
+        <p>&copy; 2020 Carlos Beltran, Inc.</p>
 </footer>
 </body>
 </html>

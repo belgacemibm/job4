@@ -16,9 +16,6 @@
                     <?php endif;?>
                     <?php endforeach;?>
 				<option value="0">Choose Category</option>
-                <?php foreach ($categories as $category): ?>
-                    <option value="<?php echo $category->id; ?>"><?php echo $category->name; ?></option>
-                <?php endforeach;?>
 			</select>
 		</div>
 		<div class="form-group">
